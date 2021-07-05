@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get In Touch</title>
+    <link rel="shortcut icon" type="image" href="images/random.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="back_to_top"><a href="#top"><img src="images/arrow_logo.png" alt=""></a></div>
+    <header id="top">
+        <a class="indeks" href="index.html">DZOCE</a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a class="selected" href="get_in_touch.html">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact">
+        <h3>Get In Touch</h3>
+        <p>Check out my social media profiles or fill out the form below to send me a message
+            and I will get back to you as soon as possible!</p>
+        <section class="social-media">
+            <a href="https://www.facebook.com"><img class="facebook social_button" src="images/facebook_logo.png"
+                    height="40px" alt="fb_logo"></a>
+            <a href="https://www.instagram.com"><img class="instagram social_button" src="images/instagram_logo.png"
+                    height="42px" alt="ig_logo"></a>
+            <a href="https://www.linkedin.com"><img class="linkedin social_button" src="images/linkedin_logo.png"
+                    height="40px" alt="li_logo"></a>
+        </section>
+        <section class="get-in-touch">
+            <form action="https://formspree.io/f/xknkzyqd" method="POST" class="contact-form whole">
+                <div class="name-mail">
+                    <div class="form-field form_element">
+                        <input id="name" name="name" class="input-text" type="text" required="">
+                        <label class="label" for="name">Name</label>
+                    </div>
+                    <div class="form-field form_element">
+                        <input id="email" name="email" class="input-text" type="email" required="">
+                        <label class="label" for="email">E-mail</label>
+                    </div>
+                </div>
+                <div class="form-field form_element width100">
+                    <input id="message" name="message" class="input-text" type="text" required="" maxlength="99">
+                    <label class="label" for="message">Message</label>
+                </div>
+                <div class="form-field form_element width100 submit-txt">
+                    <input class="submit-btn" type="submit" value="Send Message">
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        Copyright &copy; DZOCE. All rights reserved
+    </footer>
+</body>
+
+</html>

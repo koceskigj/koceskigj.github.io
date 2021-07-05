@@ -1,0 +1,497 @@
+/* fontovi */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
+
+
+
+/* opshto */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.transparenttextures.com/patterns/cartographer.png?fbclid=IwAR10HsIhyLN4f4UzkAd1sKuV5Tr3zXPghQkpHuvkJxp9LUuXipPlc8P7yLA);
+}
+
+
+
+/* Header i navigacija */
+li,header a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #292525;
+}
+.indeks{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    background-color: #292525;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    border-right: 3px solid #dd5912;
+}
+.nav_links li:nth-child(3){
+    display: inline-block;
+    padding: 0px 20px;
+    border-right: none;
+}
+.nav_links li a:hover{
+    color: #dd5912;
+}
+.selected {
+    color: #dd5912;
+}
+
+
+
+
+/* Naslovi, podnaslovi i paragrafi */
+.contact, .about, .projects{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.contact h3,.about h3{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 56px;
+    color: #ff7a33;
+    padding: 20px 0 20px 0;
+    border-bottom: 2.5px solid #fff;
+    border-top: 2.5px solid #fff;
+    width: 45%;
+    margin: 100px auto;
+}
+.projects h3{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 56px;
+    color: #ff7a33;
+    padding: 20px 0 20px 0;
+    border-bottom: 2.5px solid #fff;
+    border-top: 2.5px solid #fff;
+    width: 45%;
+    align-self: center;
+    margin: 100px 0 -20px 0;
+}
+
+
+
+
+/* Social media ikoni */
+.contact p,.about p{
+    font-family: 'Proza Libre', sans-serif;
+    align-self: center;
+    width: 35%;
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: -40px;
+}
+.contact .social-media{
+    margin-top: 80px;
+    align-self: center;
+}
+.social-media a:nth-child(2) img{
+    margin-left:20px;
+    margin-right:20px;
+}
+.social_button {
+    transition: 0.2s;
+}
+
+.social_button {
+    width: 3em;
+    height: 3em;
+    border-radius: 11px;
+}
+
+.social_button:hover {
+    margin-top: -0.35em;
+    margin-bottom: 0.35em;
+    transform: rotate(5deg);
+    box-shadow: 0 0 1em #dd5912, inset 0 0 1em #dd5912; /* trgni go ova ako ne sakash glow */
+}
+
+
+
+
+/* Formi,labeli,inputi... */
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    margin-top: 200px;
+}
+.whole{
+    margin: -50px 0;
+}
+.form_element{
+    padding: 0 20px;
+    float: left;
+}
+.contact-form .input-text {
+    font-family: 'Proza Libre', sans-serif;
+    width: 100%;
+    height: 28px;
+    background: 0 0;
+    border-width: 0 0 3px 0;
+    border-color: #dbdbdb;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 180;
+    color: #ddd;
+}
+.get-in-touch input {
+    color: white;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    cursor: text;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-color: rgb(118, 118, 118);
+}
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    margin-left: 5px;
+    font-family: Rubik,serif;
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #aabbaa;
+    cursor: text;
+    transition: transform .2s ease-in-out;
+}
+.width100 {
+    width: 100%;
+}
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+.submit-txt{
+    text-align: center;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #f7f7f7;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 260;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    border-radius: 0.5em;
+    text-align: center;
+}
+.submit-btn:hover {
+    background-color: white;
+    color: #dd5912;
+    border-radius: 1em;
+    box-shadow: 0 0 1em #dd5912;
+}
+
+
+
+
+/* Introduction */
+.box{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Proza Libre', sans-serif;
+    padding: 4em 2em;
+    border-radius: 3em;
+    box-shadow: rgba(221, 89, 18, 0.2) 0 7px 29px 0;
+    background-color: rgba(255, 154, 64, 0.3);
+}
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+    word-spacing: 8px;
+}
+.here{
+    text-decoration: none;
+    color: #ecf0f1;
+}
+.here:hover{
+    color: #ff7a33;
+}
+
+
+
+
+/* Footer */
+footer{
+    padding:15px;
+    text-align: center;
+    color: white;
+    font-size:  18px;
+    background-color: #3f3f3f;
+    letter-spacing: 1.2px;
+    margin-top: 100px;
+}
+
+
+
+
+/* Naslovi, podnaslovi i listi kaj About Me */
+.about{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.about-container{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.education,.skills,.trivia{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 396px;
+}
+.skills h5,.education h5,.trivia h5{
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 36px;
+    color: #ff7a33;
+    padding: 20px 0 20px 0;
+    border-bottom: 2.5px solid #fff;
+    border-top: 2.5px solid #fff;
+    width: 76%;
+    margin: 100px auto;
+}
+.abt {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.abt_skillz ul {
+    margin-left: 1em;
+}
+
+.abt_skillz ul ul {
+    margin-left: 2em;
+}
+
+.abt_skillz>div>ul>li{
+    font-weight: 370;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.abt h5 {
+    margin-bottom: 0.5em;
+}
+
+.abt>div {
+    padding: 0 3em;
+}
+
+.normal_list {
+    padding: 0 4em;
+}
+
+.normal_list>li {
+    padding: 0.25em 0;
+}
+
+
+
+
+/* Proekti */
+.valentine, .matrix, .milioner{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.valentine h3, .matrix h3, .milioner h3{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 56px;
+    color: #fff;
+    padding: 20px 0 20px 0;
+    width: 45%;
+    margin-top: 40px;
+    align-self: center;
+}
+.valentine .italic, .matrix .italic, .milioner .italic{
+    font-style: italic;
+    font-family: 'Proza Libre', sans-serif;
+    align-self: center;
+    width: 45%;
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.valentine .description, .matrix .description, .milioner .description{
+    font-family: 'Proza Libre', sans-serif;
+    align-self: center;
+    width: 45%;
+    text-align: justify;
+    color: #eee;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    word-spacing: 3px;
+}
+.matrix img{
+    width: 45%;
+    align-self: center;
+    margin-top: 40px;
+}
+
+
+
+
+/* 9.Slideshow */
+.slidershow{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+.middle{
+    transform: translate(-50%,-50%);
+    position: relative;
+    margin-top: 290px;
+    margin-bottom: -240px;
+    top: 50%;
+    left: 50%;
+}
+
+.ss-navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 15px;
+    border: 4px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background-color: #fff;
+}
+input[name="r"],input[name="m"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width:500%;
+    height:100%;
+    display: flex;
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~ .s1,#m1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1,#m2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1,#m3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1,#m4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1,#m5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+
+
+/* back to top */
+.back_to_top {
+    position: fixed;
+    bottom: 4em;
+    right: 1em;
+    z-index: 999999;
+}
+
+.back_to_top img {
+    display: inline-block;
+    max-width: 4em;
+    max-height: 4em;
+    transition: 0.2s;
+}
+
+.back_to_top img:hover {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
